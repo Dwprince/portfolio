@@ -28,9 +28,9 @@ footer{
 }
 
 #footer{
-    text-align: center;
+    text-align: start;
     margin-top: -10px;
-    margin-bottom: 10px;
+    margin-bottom: 3px;
     color: white;
     text-shadow: 0 0 20px black;
     display: flex;
@@ -42,24 +42,20 @@ footer{
 }
 
 #pic{
-    height: 200px;
-    border: 2px solid white;
+    height: 180px;
+    border: 1px solid whitesmoke;
     border-color: white;
-    box-shadow: 0 0 10px whitesmoke;
-    border-radius: 20px;
+    box-shadow: 0 0 15px whitesmoke;
+    border-radius: 60px;
+
 }
 
 #desk{
+    position: relative;
     text-align: center;
-    position: absolute;
-    z-index: 99;
-
-    top: 67%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
+    margin-bottom: 15%;
     animation-name: IN;
-    animation-duration: 7s;
+    animation-duration: 3s;
 }
 
 @keyframes IN {
@@ -183,6 +179,7 @@ a{
 }
 
 #dev{
+    visibility: hidden;
     margin-top: 15px;
     margin-bottom: 15px;
     margin-right: 20px;
@@ -196,8 +193,9 @@ a{
 }
 
 .title{
-    margin-top: 3em;
-    font-size: 50px;
+    margin-top: 15vh;
+    margin-bottom: 5vh;
+    font-size: 30px;
     color: white;
     text-align: center;
     text-shadow: 0 0 50px whitesmoke;
@@ -261,40 +259,68 @@ a{
 }
 
 .content{
-    padding: 15px;
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-bottom: 55px;
+    padding: 5%;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-bottom: 15%;
+    text-align: center;
 
     background-color: black;
     opacity: 50%;
     border-radius: 60px;
     box-shadow: 0 0 15px whitesmoke;
 
-    text-align: center;
     animation-name: fadein;
-    animation-duration: 5.5s;
+    animation-duration: 3.5s;
 
-    overflow-wrap: normal;
+    overflow: hidden;
     position: relative;
     font-family: Pixel-Content;
 }
 
 p{
-    margin-top: 2em;
-    margin-left: 2em;
-    margin-right: 2em;
-    margin-bottom: 2em;
+    margin: 8%;
     font-size: 20px;
     color: white;
-    justify-content: center;
-    text-align: center;
+    text-align: start;
     text-shadow: 0 0 50px black;
+}
+
+.content-greeting{
+    align-self: center;
+}
+
+.car{
+    border: 1px solid whitesmoke;
+    margin-bottom: 15%;
+    box-shadow: 0 0 15px white;
+    display: inline-block;
+
+    position: relative;
+}
+
+.car img{
+    position: relative;
+    z-index: 49;
+}
+
+#motto{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    color: white;
+    font-size: 13px;
+    font-family: Pixel-Content;
+    text-shadow: 0 0 15px whitesmoke;
+
+    z-index: 50;
+    animation-name: fadeIn;
 }
 
 @keyframes fadein {
     from{
         background-color: rgba(0,0,0,0);
+        opacity: 0%;
     }
     to{
         background-color:rgba(0,0,0,0.7);
@@ -304,26 +330,31 @@ p{
 #p1{
     animation-name: slideinp1;
     animation-duration: 2.5s;
+    overflow: auto;
 }
 
 #p2{
     animation-name: slideinp2;
     animation-duration: 3s;
+    overflow: auto;
 }
 
 #p3{
     animation-name: slideinp3;
     animation-duration: 3.5s;
+    overflow: auto;
 }
 
 #p4{
     animation-name: slideinp4;
     animation-duration: 4s;
+    overflow: auto;
 }
 
 #p5{
     animation-name: slideinp5;
     animation-duration: 5s;
+    overflow: auto;
 }
 
 @keyframes slideinp1{
